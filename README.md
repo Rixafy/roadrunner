@@ -29,7 +29,11 @@ extensions:
     roadrunner: Bckp\RoadRunner\DI\Extension
 
 roadrunner:
-    showExceptions: %debugMode%
+    catchExceptions: %debugMode%
+    
+services: # Use some PSR-7 implementation, nyholm/psr7 or guzzlehttp/guzzle
+#    - Nyholm\Psr7\Factory\Psr17Factory
+#    - GuzzleHttp\Psr7\HttpFactory
 ```
 
 Then we need to update our bootstrap, as RR extension is still big WIP, it is recomended not to enable debug mode. So in current Bootstrap we create new static method for booting into RR plugin
