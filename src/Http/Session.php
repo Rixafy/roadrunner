@@ -131,7 +131,7 @@ class Session extends \Nette\Http\Session
 			$cookie['domain'],
 			$cookie['secure'],
 			$cookie['httponly'],
-			$cookie['samesite'] ?? null
+			$cookie['samesite']
 		);
 	}
 
