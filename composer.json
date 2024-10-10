@@ -22,9 +22,9 @@
 		"nette/di": "^3.1",
 		"nette/http": "^3.0",
 		"nette/schema": "^1.2",
-		"nette/utils": "^3.0",
+		"nette/utils": ">=3.0",
 		"psr/http-server-middleware": "^1.0",
-		"spiral/roadrunner-http": "^2.0"
+		"spiral/roadrunner-http": "^3.0"
 	},
 	"require-dev": {
 		"nette/bootstrap": "^3.0",

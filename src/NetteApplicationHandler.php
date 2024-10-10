@@ -141,8 +141,6 @@ class NetteApplicationHandler implements RequestHandlerInterface
 			$this->httpRequest->getMethod(),
 			$params,
 			$this->httpRequest->getPost(),
-			[],
-			[Request::SECURED => $this->httpRequest->isSecured()]
 		);
 	}
 
